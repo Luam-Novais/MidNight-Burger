@@ -1,0 +1,54 @@
+[data-container="sobre-nos"]{
+    background-color: var(--color-black-heavy);
+    background-repeat: repeat;
+    background-position: bottom;
+    background-size: contain;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.tittle-sobre::before{
+    content: '';
+    position: absolute;
+    border-radius: 4px;
+    width: 45px;
+    height: 5px;
+    top: 20px;
+    left: 0;
+    z-index: -1;
+    background-color: var(--color-primary);
+}
+[data-container="sobre-nos"] .description{
+    width: 500px;
+    padding-bottom: 40px;
+}
+
+[data-history="history-container"]{
+    display: grid;
+    grid-template-columns: 400px 400px;
+
+}
+
+[data-history="history-container"] img{
+    object-position: center;
+    width: 400px;
+}
+[data-history="history"] h2{
+    font-size: 2.5rem;
+}
+[data-history="history"]{
+    width: 400px;
+}
+[data-history="history"]{
+    background-color: var(--color-black);
+    display: grid;
+    justify-content: center;
+    padding-top:40px ;
+    
+}
+[data-history="history"] p{
+    width: 300px;
+    line-height: 24px;
+}

@@ -1,0 +1,198 @@
+@import url(./home.css);
+@import url(./sobre.css);
+@import url(./localizacao.css);
+@import url(./footer.css);
+@import url(./cardapio.css);
+@import url(./galery.css);
+@import url(./carrinho.css);
+
+:root{
+    --color-black-heavy: #000;
+    --color-very-white: #fff;
+    --color-white: #EFEFEF;
+    --color-primary-ligth: #E7B75A;
+    --color-primary: #F5A711;
+    --color-primary-dark: #9C6D11;
+    --color-cz-light: #D9DBE2;
+    --color-cz-medium:#91949E;
+    --color-cz-dark:#2D2E31;
+    --color-black:#141416;
+}
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    color: var(--color-very-white);
+    padding: 20px 40px;
+    position: relative;
+}
+.header img{
+    width: 100px;
+}
+
+.links-nav{
+    display: flex;
+    align-content: center;
+    gap: 20px;
+}
+.links-nav li{
+    list-style: none;
+    display: flex;
+    align-items: center;
+}
+.links-nav a{
+    font-family: 'poppins';
+    font-weight: 500;
+    color: var(--color-very-white);
+    position: relative;
+    text-decoration: none;
+}
+.links-nav a.ativo{
+    transition: all .4s ease;
+    color: var(--color-primary);
+}
+
+.links-nav a.ativo::after{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    animation: link-animation .4s forwards;
+    height: 2px;
+    background-color: var(--color-primary);
+    transition: all .8s ease;
+    border-radius: 2px;
+}
+@keyframes link-animation {
+    from{
+        width: 0%;
+    }
+    to{
+        width: 100%;
+    }
+}
+[data-container]{
+    padding: 40px 0px;
+}
+[data-tittle]{
+    font-family: 'poppins';
+    font-weight: 500;
+    color: var(--color-very-white);
+    text-transform: capitalize;
+    font-size: 5rem;
+}
+[data-tittle = "tittle-home"]{
+    font-family: 'bebas neue';
+    font-size: 6rem;
+    font-weight: 600;
+}
+.subtittle-primary{
+    font-family: bebas neue;
+    letter-spacing: .0625rem;
+    font-size: 2rem !important;
+    color: var(--color-primary) !important;
+
+}
+[data-description]{
+    font-family: roboto;
+    font-size: 1rem;
+    color: var(--color-cz-light);
+}
+[data-scroll="scroll"]{
+    opacity: 0;
+    filter: blur(5px);
+    transform: translate3d(-100px, 0, 0);
+    transition: all .6s ease;
+}
+.active-scroll{
+    opacity: 1;
+    filter: blur(0);
+    transform: translate3d(0, 0, 0);
+}
+.btn-to-carrinho{
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: var(--color-primary);
+    padding: 10px 16px;
+    border-radius: 16px;
+    transition: all .4s ease;
+    border: none;
+}
+.btn-to-carrinho i {
+    color: var(--color-black);
+    font-size: 1.25rem;
+}
+.btn-to-carrinho span{
+    position: absolute;
+    top: -10px;
+    right: 0;
+    background-color: var(--color-white);
+    color: var(--color-black);
+    font-weight: 600;
+    padding: 4px 6px;
+    border-radius: 10px;
+    font-size: 1.125rem;
+    z-index: -1;
+}
+
+.hidden{
+    display: none;
+}
+.navbar-mobile{
+    min-width: 100%;
+    display: none;
+}
+.navbar-mobile li {
+    display: flex;
+    list-style: none;
+    width: 100%;
+    
+}
+.navbar-mobile a{
+    color: var(--color-very-white);
+    font-size: 30px;
+}
+.navbar-mobile a.ativo{
+    transition: all .4s ease;
+    color: var(--color-primary);
+    border-radius: 50%;
+    padding: 20px;
+    background-color: var(--color-black-heavy);
+    transform: translateY(-60px);
+}
+@media(max-width: 600px){
+    .header{
+       position: fixed;
+       bottom: 0;
+       background-color: var(--color-black);
+       width: 100%;
+       padding: 20px;
+       z-index: 999;
+    }
+    .logo{
+        display: none;
+    }
+    .links-nav{
+        display: none !important;
+    }
+    .header nav{
+        min-width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+    .navbar-mobile{
+        display: flex;
+        justify-content: space-between;
+    }
+    .navbar-mobile li{
+        justify-content: space-around;
+    }
+}

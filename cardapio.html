@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/global.css">
+    
+    <title>MidNight Burger | Cardapio</title>
+    <style>
+        body{
+            background-color: #111;
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <a class="logo" href="index.html"><img src="./img/logo.svg" alt=""></a>
+        <nav>
+            <ul class="links-nav" data-links="links-nav">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="cardapio.html">Cardápio</a></li>
+                <li><a class="carrinho"  href="carrinho.html">Carrinho<i class="fa-solid fa-cart-shopping"></i></i></a></li>
+            </ul>
+
+            <ul class="navbar-mobile">
+                <li><a href="index.html"><i class="fa-solid fa-house"></i></a></li>
+                <li><a href="cardapio.html"><i class="fa-solid fa-utensils"></i></a></li>
+                <li><a href="carrinho.html"><i class="fa-solid fa-cart-shopping"></i></a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <ul class="container-categorias" data-categorias="categorias-container">
+            <li class="categorias subtittle-primary" data-subtittle="categorias-subtittle"><a id="menu-lanches" href="" class="ativo">Hamburguers</a></li>
+            <li  class="categorias subtittle-primary" data-subtittle="categorias-subtittle"><a id="menu-pizzas"href="">pizzas</a></li>
+            <li  class="categorias subtittle-primary" data-subtittle="categorias-subtittle"><a id="menu-porcoes" href="">porções</a></li>
+            <li  class="categorias subtittle-primary" data-subtittle="categorias-subtittle"><a  id="menu-sobremesas" href="">sobremesas</a></li>
+            <li  class="categorias subtittle-primary" data-subtittle="categorias-subtittle"><a id="menu-bebidas" href="">bebidas</a></li>
+        </ul>
+        <section class="cards-container">
+        </section>
+        <button class="btn-to-carrinho hidden"><a href="carrinho.html"><i class="fa-solid fa-cart-shopping"></i></i><span></span></a></button>
+    </main>
+   <script type="module" src="./js/script.js"></script>
+   <script src="https://kit.fontawesome.com/2f73255f9e.js" crossorigin="anonymous"></script>
+</body>
+</html>

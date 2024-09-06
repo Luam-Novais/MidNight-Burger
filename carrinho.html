@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/global.css">
+    <title>MidNight Burger | Carrinho</title>
+    <style>
+        body{
+            background-color: var(--color-black-heavy);
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <a class="logo" href="index.html"><img src="./img/logo.svg" alt=""></a>
+        <nav>
+            <ul class="links-nav" data-links="links-nav">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="cardapio.html">Cardápio</a></li>
+                <li><a class="carrinho" href="carrinho.html">Carrinho<i class="fa-solid fa-cart-shopping"></i></a></li>
+            </ul>
+            <ul class="navbar-mobile">
+                <li><a class="ativo" href="index.html"><i class="fa-solid fa-house"></i></a></li>
+                <li><a href="cardapio.html"><i class="fa-solid fa-utensils"></i></a></li>
+                <li><a href="carrinho.html"><i class="fa-solid fa-cart-shopping"></i></a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <button class="btn-to-carrinho hidden"><a href="carrinho.html"><i class="fa-solid fa-cart-shopping"></i><span></span></a></button>
+    </main>
+   <script type="module" src="./js/script.js"></script>
+   <script src="https://kit.fontawesome.com/2f73255f9e.js" crossorigin="anonymous"></script>
+</body>
+</html>

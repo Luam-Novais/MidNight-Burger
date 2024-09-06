@@ -1,0 +1,53 @@
+.carrinho{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--color-white);
+    padding: 4px 10px;
+    color: var(--color-black) !important;
+    transition: all .4s ease;
+    border-radius: 4px;
+    font-weight: 600 !important;
+    gap: 5px;
+}
+.carrinho i{
+    background-color: var(--color-primary);
+    padding: 4px 8px;
+    border-radius: 4px;
+    transition: all .4s ease;
+
+}
+.carrinho.ativo{
+    background-color: var(--color-primary);
+}
+.carrinho.ativo i{
+    background-color: var(--color-white);
+}
+.carrinho.ativo::after{
+    display: none;
+}
+.btn-to-carrinho{
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: var(--color-primary);
+    padding: 10px 16px;
+    border-radius: 16px;
+    transition: all .4s ease;
+    border: none;
+}
+.btn-to-carrinho i {
+    color: var(--color-black);
+    font-size: 1.25rem;
+}
+.btn-to-carrinho span{
+    position: absolute;
+    top: -10px;
+    right: 0;
+    background-color: var(--color-white);
+    color: var(--color-black);
+    font-weight: 600;
+    padding: 4px;
+    border-radius: 10px;
+    z-index: -1;
+}

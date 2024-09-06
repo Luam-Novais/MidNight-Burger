@@ -1,0 +1,146 @@
+body{
+    background-image: url(../img/bg-icons-2.png);
+    background-position: left center;
+    background-size: contain;
+}
+[data-categorias="categorias-container"]{
+    display: flex;
+    justify-content: space-around;
+}
+
+[data-subtittle="categorias-subtittle"]{
+    list-style: none;
+}
+[data-subtittle="categorias-subtittle"] a{
+    color: var(--color-very-white);
+}
+[data-subtittle="categorias-subtittle"] a.ativo{
+    color: var(--color-primary);
+}
+
+.cards-container{
+    padding: 50px 100px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 30px 20px;
+    align-items: center;
+    justify-content: center;
+}
+
+.card{
+    background-color: var(--color-black-heavy);
+    color: var(--color-very-white);
+    font-family: 'poppins', Arial, Helvetica, sans-serif;
+    display: grid;
+    justify-items: center;
+    padding: 20px;
+    width: 230px;
+    height: 280px;
+    border-radius: 10px;
+    transition: all .8s ease;
+}
+.card .img-food{
+    margin-bottom: 10px;
+    border-radius: 10px;
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+}
+.ingredientes{
+    display: none;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 500;
+    color: var(--color-black);
+    font-size: .875rem;
+}
+.preco{
+    color: var(--color-primary);
+    font-weight: 600;
+    font-size: 1.5rem;
+} 
+.container-quantity{
+    justify-self: center;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+    display: none;
+}
+.btns-container{
+    display: flex ;
+    align-items: center;
+    gap: 20px;
+    padding: 0px 5px;
+    border: 2px solid var(--color-black-heavy);
+    border-radius: 10px;
+}
+.quantity{
+    color: var(--color-black-heavy);
+    font-weight: 600;
+}
+.btn-quantity-decrease,
+.btn-quantity-increase{
+    background-color: transparent;
+    font-weight: 600;
+    font-size: 1.5rem;
+    border: none;
+    cursor: pointer;
+
+}
+.add-carrinho{
+    color: var(--color-very-white);
+    font-family: bebas neue;
+    border: 1px solid var(--color-black-heavy);
+    background-color: var(--color-black-heavy);
+    padding: 6px 15px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.add-carrinho img{
+    width: 15px;
+}
+.card:hover{
+    background-color: var(--color-primary);
+}
+.card:hover .img-food{
+    display: none;
+}
+.card:hover .nome-food{
+    color: var(--color-black-heavy);
+    font-weight: 600;
+    font-size: 1.125rem;
+}
+.card:hover .preco{
+    color: var(--color-black-heavy);
+}
+.card:hover .ingredientes{
+    display: block;
+
+}
+.card:hover .container-quantity{
+    display: flex;
+}
+
+@media(max-width: 400px){
+    [data-categorias="categorias-container"]{
+        gap: 50px;
+        padding: 20px;
+        flex-wrap: nowrap;
+        overflow-x: auto;
+        scroll-behavior: smooth;
+        white-space: nowrap;
+
+    }
+    [data-subtittle="categorias-subtittle"] a{
+        
+        flex: 0 0 auto;
+    }
+    .cards-container{
+        grid-template-columns: 1fr;
+        justify-items: center;
+    }
+}

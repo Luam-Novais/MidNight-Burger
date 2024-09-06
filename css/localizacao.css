@@ -1,0 +1,51 @@
+.localization{
+    min-height: 100vh;
+    background-color: var(--color-very-white);
+    padding: 80px 0px;
+}
+.tittle-localization{
+    text-align: center;
+    color: var(--color-black-heavy)!important;
+    margin-bottom: 40px;
+}
+.tittle-localization span{
+    color: var(--color-primary);
+}
+[data-localization="localization-container"]{
+    display: grid;
+    grid-template-columns: 400px 400px;
+    justify-content: center;
+    align-items: center;
+}
+[data-localization="localization-container"] img{
+    width: 400px;
+}
+[data-description="description-container"]{
+    background-color: var(--color-black-heavy);
+    display: grid;
+    width: 100%;
+    height: 100%;
+    padding: 20px 40px;
+}
+
+.endereco,
+.horario{
+    position: relative;
+}
+.endereco::after,
+.horario::after{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 1px;
+    background-color: var(--color-cz-dark);
+    margin-top: 5px;
+}
+.description{
+    font-family: 'poppins';
+}
+.redes img{
+    justify-self: center;
+    width: 20px;
+    margin-right: 20px;
+}

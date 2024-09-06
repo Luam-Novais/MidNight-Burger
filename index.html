@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/global.css">
+    <title>MidNight Burger</title>
+</head>
+<body>
+<div class="home">
+    <header class="header">
+        <a class="logo" href="index.html"><img src="./img/logo.svg" alt=""></a>
+        <nav>
+            <ul class="links-nav"  data-links="links-nav">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="cardapio.html">Cardápio</a></li>
+                <li><a class="carrinho"  href="carrinho.html">Carrinho<i class="fa-solid fa-cart-shopping"></i></a></li>
+            </ul>
+
+            <ul class="navbar-mobile">
+                <li><a href="index.html"><i class="fa-solid fa-house"></i></a></li>
+                <li><a href="cardapio.html"><i class="fa-solid fa-utensils"></i></a></li>
+                <li><a href="carrinho.html"><i class="fa-solid fa-cart-shopping"></i></a></li>
+            </ul>
+        </nav>
+    </header>
+        <div class="home-container" data-home="home-container">
+            <h1 data-tittle="tittle-home">porque a fome não tem hora!</h1>
+            <p data-description="home-description">Fechamos sua noite com o lanche ideal, feito para quem vive intensamente cada momento.</p>
+        </div>
+    </div>
+    <main id="container" data-main="main-container">
+        <section id="sobre-nos" data-container="sobre-nos"  style="background-image: url(./img/bg-icons-1.png)">
+           <div data-scroll="scroll">
+            <h1 class="tittle-sobre" data-tittle="tittle-sobre">sobre nós</h1>
+            <p class="description" data-description="sobre-description">De uma paixão pela noite, surgiu nossa hamburgueria, feita para saciar a fome de quem não para.</p>
+
+            <div class="history" data-history="history-container">
+                <img src="./img/burger-sobrenos.jpg" alt="hamburguer">
+            <div data-history="history">
+                <h2 class="subtittle" data-tittle="subtittle">nossa história <i class="fa-solid fa-book" style="color: var(--color-primary);"></i></h2>
+                <p  data-description="sobre-description">
+                    Nossa hamburgueria foi criada pensando em quem vive intensamente, aproveita cada momento e não abre mão de uma boa refeição para repor as energias. Com ingredientes frescos, combinações surpreendentes e aquele sabor que só a fome da madrugada pede, nossos hambúrgueres são feitos para satisfazer o seu apetite noturno, sem complicações. Estamos aqui, prontos para servir aquele lanchinho que vai deixar sua noite ainda melhor. Bem-vindo à sua nova parada obrigatória pós-balada!
+                </p>
+            </div>
+        </div>
+           </div>
+        </section>
+        <section id="localization" class="localization" data-container="localizacao">
+           <div data-scroll="scroll">
+            <h1 class="tittle-localization"  data-tittle="tittle-localization">onde estamos localizados<span>.</span></h1>
+            <div  data-localization="localization-container">
+                <img src="./img/google-maps 1.jpg" alt="mapa">
+            <div data-description="description-container">
+                <div class="endereco" data-localization="endereco">
+                    <h2 class="subtittle-primary" data-subtittle="subtittle-localization">endereço</h2>
+                    <p class="description" data-localization="localization-description">Rua Ali Perto nº 485</p>
+                    <p class="description" data-localization="localization-description">Bairro NãoSei - Resende RJ  </p>
+                </div>
+                <div class="horario" data-localization="horario">
+                    <h2 class="subtittle-primary" data-subtittle="subtittle-localization">horários</h2>
+                    <p class="description" data-localization="localization-description">Terça à Domingo</p>
+                    <p class="description" data-localization="localization-description">19h às 05h</p>
+                </div>
+                <div class="redes" data-localization="redes">
+                    <h2 class="subtittle-primary" data-subtittle="subtittle-localization">redes sociais</h2>
+                    <a href="../"><img src="./img/instagram.svg" alt=""></a>
+                    <a href="../"><img src="./img/facebook.svg" alt=""></a>
+                    <a href="../"><img src="./img/whatsapp.svg" alt=""></a>
+                </div>
+            </div>
+        </div>
+           </div>
+        </section>
+        <button class="btn-to-carrinho hidden"><a href="carrinho.html"><i class="fa-solid fa-cart-shopping"></i><span></span></a></button>
+    </main>
+    <footer id="footer" class="footer" data-footer="footer">
+    </footer>
+   <script type="module" src="./js/script.js"></script>
+   <script src="https://kit.fontawesome.com/2f73255f9e.js" crossorigin="anonymous"></script>
+</body>
+</html>
